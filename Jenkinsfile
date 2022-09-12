@@ -4,7 +4,9 @@ pipeline {
         stage("Build") {
             steps {
                 //sh "sudo npm install"
-                sh "cd jenkins-react-app && sudo npm run build"
+                //sh "cd jenkins-react-app && sudo npm run build"
+                sh "ls -a"
+                sh "pwd"
             }
         }
         stage("Deploy") {
